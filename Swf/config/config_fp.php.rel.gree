@@ -1,0 +1,24 @@
+<?php
+set_include_path('./core' . PATH_SEPARATOR . get_include_path());
+
+define('OPENSOCIAL_GADGET_SERVER_URL', 'http://mgadget.gree.jp');
+define('OPENSOCIAL_MEDIA_SERVER_URL', 'http://mgadget.gree.jp');
+define('APP_ROOT', 'http://gree-fp.tawadora.com');
+define('MEDIA_ROOT', 'http://gree-swf.tawadora.com');
+
+define('SOURCE_DIR', '.' . DIRECTORY_SEPARATOR . 'source' . DIRECTORY_SEPARATOR . 'fp');//FPの場合はfp配下
+define('IMAGE_DIR', SOURCE_DIR . DIRECTORY_SEPARATOR. 'image' . DIRECTORY_SEPARATOR);//FPの場合はmobile配下
+define('ERROR_REDIRECT', 'http://gree-fp.tawadora.com/Error/Invalid');
+define('PAGE_TITLE', 'タワーオブドラゴン');
+
+
+
+
+define('OAUTH_GADGET_SERVER_AUTHORIZATION', true);
+
+//開発環境では強制的にprefixが付与されているためset,get時にkeyに付加する　※本番用configは空文字
+define('PLATFORM_PREFIX', OPENSOCIAL_PLATFORM . OPENSOCIAL_APP_ID);
+define('CACHE_PREFIX', "");
+
+define('CHECK_CONTENT_LENGTH_ENABLED', true);
+?>
